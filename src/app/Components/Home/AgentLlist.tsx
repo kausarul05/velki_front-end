@@ -82,7 +82,7 @@ const renderTable = (title: string, data: Agent[]) => (
                         </td>
                         <td className="px-4 py-2 border text-red-600 font-medium">
                             <a
-                                href={`https://wa.me/${agent.phone}`}
+                                href={`https://wa.me/${agent.call}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -136,8 +136,12 @@ export default function AgentLlist({ agentId }: AgentLlistProps) {
     return (
         <main className="min-h-screen bg-gray-100 text-black p-4 md:p-10">
             {chunkedTables.map((tableData, index) =>
-                renderTable(`Table ${index + 1} (৬ জন)`, tableData)
+                renderTable(
+                    `সাব এডমিন ${index + 1} এর অধীনে সুপার এজেন্ট 200 এর অধীনে সর্বমোট মাস্টার এজেন্ট আছে ${tableData.length} জন`,
+                    tableData
+                )
             )}
+
         </main>
     );
 }
