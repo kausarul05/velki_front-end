@@ -7,8 +7,8 @@ import img3 from "@/../../public/footer3.jpg"
 
 const Footer = () => {
     return (
-        <footer className="bg-white text-black mt-10">
-            <div className="px-4 py-10 space-y-8">
+        <footer className="bg-white text-black">
+            <div className="px-4 py-10 pt-0 space-y-8">
 
                 {/* Top Banner Image */}
                 <div className="flex justify-center">

@@ -13,14 +13,20 @@ export default function Navbar({ setSearchAgentId }: NavbarProps) {
   };
 
   return (
-    <div className="bg-gray-100 flex flex-col items-center justify-start py-10 px-4">
+    <div className="bg-gray-100 flex flex-col items-center justify-start py-10 pt-0 pb-0 px-4">
       {/* Header */}
-      <div className="w-full shadow text-right text-xl pb-2 text-red-700 font-semibold mb-10">
-        কাস্টমার সার্ভিস
+      <div className="w-full shadow text-right text-xl pb-2 text-red-700 font-semibold mb-4">
+        <a
+          href={`https://wa.me/+17786440268`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          কাস্টমার সার্ভিস
+        </a>
       </div>
 
       {/* Agent Form Card */}
-      <div className="bg-white text-black shadow-lg rounded-lg p-8 w-full max-w-md mb-10">
+      <div className="bg-white text-black shadow-lg rounded-lg p-8 pt-4 w-full max-w-md mb-4">
         <h2 className="text-center text-lg font-semibold mb-6">
           এজেন্ট এর আইডি নম্বর দিয়ে খুঁজুন:
         </h2>

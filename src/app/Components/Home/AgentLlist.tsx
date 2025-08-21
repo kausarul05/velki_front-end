@@ -46,7 +46,7 @@ function shuffleArray<T>(array: T[]): T[] {
 
 // Table render function
 const renderTable = (title: string, data: Agent[]) => (
-    <div className="overflow-x-auto my-8 border border-gray-300 rounded-md shadow-sm">
+    <div className="overflow-x-auto my-8 mt-0 border border-gray-300 rounded-md shadow-sm">
         <h3 className="text-center text-sm font-medium bg-gray-100 py-2 border-b border-gray-300">
             {title}
         </h3>
@@ -134,7 +134,7 @@ export default function AgentLlist({ agentId }: AgentLlistProps) {
     }
 
     return (
-        <main className="min-h-screen bg-gray-100 text-black p-4 md:p-10">
+        <main className="min-h-screen bg-gray-100 text-black p-4 md:p-4">
             {chunkedTables.map((tableData, index) =>
                 renderTable(
                     `সাব এডমিন ${index + 1} এর অধীনে সুপার এজেন্ট 200 এর অধীনে সর্বমোট মাস্টার এজেন্ট আছে ${tableData.length} জন`,
